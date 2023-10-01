@@ -1,0 +1,81 @@
+/* IMPORT
+----------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+/* VARIABLES
+----------------------------------------------------------------
+*/
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+/* UNIVERSAL
+----------------------------------------------------------------
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Epilogue", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* NAVBAR
+----------------------------------------------------------------
+*/
+
+.navigation {
+  width: 100%;
+}
+
+.navigation-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+  width: 100%;
+  padding: 2rem 3rem;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 3rem;
+  list-style: none;
+  flex: 1;
+  color: var(--medium-gray);
+  transition: all 0.3s;
+}
+
+.nav-list li {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  height: 2rem;
+}
+
+.nav-list li:hover {
+  color: var(--almost-black);
+  cursor: pointer;
+}

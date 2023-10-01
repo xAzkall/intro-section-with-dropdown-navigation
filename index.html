@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation-desktop">
+        <img src="images/logo.svg" alt="Logo" />
+        <ul class="nav-list">
+          <li>
+            Features <img src="images/icon-arrow-down.svg" alt="" />
+            <ul class="dropdown hidden">
+              <li><img src="images/icon-todo.svg" />Todo List</li>
+              <li><img src="images/icon-calendar.svg" />Calendar</li>
+              <li><img src="images/icon-reminders.svg" />Reminders</li>
+              <li><img src="images/icon-planning.svg" />Planning</li>
+            </ul>
+          </li>
+          <li>
+            Company <img src="images/icon-arrow-down.svg" alt="" />
+            <ul class="dropdown hidden">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="btns-box">
+          <a href="#" class="btn btn-log">Login</a>
+          <a href="#" class="btn btn-reg">Register</a>
+        </div>
+      </div>
+      <!-- mobile navigation -->
+      <div class="navigation-mobile">
+        <img src="images/logo.svg" alt="Logo" />
+        <div class="hamburger-icon">
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="mobile-menu hidden">
+          <ul class="nav-list">
+            <li>
+              Features <img src="images/icon-arrow-down.svg" alt="" />
+              <ul class="dropdown hidden">
+                <li><img src="images/icon-todo.svg" />Todo List</li>
+                <li><img src="images/icon-calendar.svg" />Calendar</li>
+                <li><img src="images/icon-reminders.svg" />Reminders</li>
+                <li><img src="images/icon-planning.svg" />Planning</li>
+              </ul>
+            </li>
+            <li>
+              Company <img src="images/icon-arrow-down.svg" alt="" />
+              <ul class="dropdown hidden">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="btns-box">
+            <a href="#" class="btn btn-log">Login</a>
+            <a href="#" class="btn btn-reg">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="hero">
+        <div class="hero-content">
+          <h1 class="heading-primary">Make remote word</h1>
+          <p class="hero-description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="btn btn-more">Learn more</a>
+        </div>
+        <div class="brands">
+          <img src="images/client-databiz.svg" />
+          <img src="images/client-audiophile.svg" />
+          <img src="images/client-meet.svg" />
+          <img src="images/client-maker.svg" />
+        </div>
+        <div class="hero-img">
+          <picture>
+            <source
+              media="(max-width: 750px)"
+              srcset="images/image-hero-mobile.png"
+            />
+            <img src="images/image-hero-desktop.png" />
+          </picture>
+        </div>
+      </header>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
